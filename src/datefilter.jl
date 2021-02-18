@@ -14,7 +14,7 @@ which is editable by the user.
 Keyword arguments:
 - `id` (String; optional): The ID used to identify this component in Dash callbacks.
 - `label` (String; required): A label that will be printed when this component is rendered.
-- `value` (String; optional): The value displayed in the input.
+- `value` (Bool | Real | String | Dict | Array; optional): The value displayed in the input.
 """
 function datefilter(; kwargs...)
         available_props = Symbol[:id, :label, :value]

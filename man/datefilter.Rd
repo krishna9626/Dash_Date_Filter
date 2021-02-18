@@ -18,7 +18,7 @@ datefilter(id=NULL, label=NULL, value=NULL)
 
 \item{label}{Character. A label that will be printed when this component is rendered.}
 
-\item{value}{Character. The value displayed in the input.}
+\item{value}{Logical | numeric | character | named list | unnamed list. The value displayed in the input.}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

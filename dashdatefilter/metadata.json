@@ -20,7 +20,7 @@
       },
       "value": {
         "type": {
-          "name": "string"
+          "name": "any"
         },
         "required": false,
         "description": "The value displayed in the input."

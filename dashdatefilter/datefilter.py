@@ -14,7 +14,7 @@ which is editable by the user.
 Keyword arguments:
 - id (string; optional): The ID used to identify this component in Dash callbacks.
 - label (string; required): A label that will be printed when this component is rendered.
-- value (string; optional): The value displayed in the input."""
+- value (boolean | number | string | dict | list; optional): The value displayed in the input."""
     @_explicitize_args
     def __init__(self, id=Component.UNDEFINED, label=Component.REQUIRED, value=Component.UNDEFINED, **kwargs):
         self._prop_names = ['id', 'label', 'value']

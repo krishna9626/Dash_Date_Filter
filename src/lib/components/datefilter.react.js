@@ -44,7 +44,7 @@ datefilter.propTypes = {
     /**
      * The value displayed in the input.
      */
-    value: PropTypes.string,
+    value: PropTypes.any,
 
     /**
      * Dash-assigned callback that should be called to report property changes
