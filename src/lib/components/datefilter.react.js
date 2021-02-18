@@ -1,8 +1,7 @@
 import React, {Component,useState} from 'react';
 import PropTypes from 'prop-types';
 import DatePicker from "react-datepicker";
-import moment from "moment"; 
-
+import "react-datepicker/dist/react-datepicker.css";
 
 /**
  * ExampleComponent is an example component.
@@ -15,13 +14,12 @@ export default class datefilter extends Component {
     constructor(props) {
     super(props);
     this.state = {
-      startDate: moment("2014-02-08"),
-      setStartDate: moment("2014-02-10")
+      startDate: new Date()
     };
   }
     render() {
         const {id, label, setProps, value} = this.props;
-        //const [startDate, setStartDate] = useState(new Date());
+
         return (
             <div id={id}>
             <DatePicker selected={this.state.startDate} onChange={date => setProps({ value: date })} />
